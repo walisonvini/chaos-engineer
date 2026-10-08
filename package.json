@@ -1,0 +1,28 @@
+{
+	"name": "chaos-engineer",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "node --watch --env-file=.env src/server.ts",
+		"start": "node dist/server.js",
+		"format": "biome format --write"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@fastify/swagger": "^9.9.1",
+		"@scalar/fastify-api-reference": "^1.73.1",
+		"fastify": "^5.12.5",
+		"fastify-type-provider-zod": "^7.0.0",
+		"zod": "^4.6.5"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.5.15",
+		"@types/node": "^26.6.4",
+		"tsx": "^4.23.15",
+		"typescript": "^7.0.2"
+	},
+	"type": "module"
+}
